@@ -48,4 +48,4 @@ Este é um projeto simples para gerenciar contatos, permitindo adicionar e remov
 
 5.  Abra seu navegador e acesse `http://localhost:5173/` para visualizar o aplicativo.
 
-6.  Instale o back-end visitando [Api Contack Book](contact-book-api)
+6.  Instale o back-end visitando [Api Contack Book](https://github.com/RodrigoVitor/contact-book-api)
