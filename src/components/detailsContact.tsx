@@ -2,12 +2,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 type detailsContactType = {
-  contacts: [
-    {
-      id: number;
-      name: string;
-    }
-  ];
+  contacts: { id: number; name: string }[];
   isDeletedContact: () => void;
 };
 

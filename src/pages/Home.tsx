@@ -7,7 +7,7 @@ export default function Home() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [zap, setZap] = useState("");
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState<{ id: number; name: string }[]>([]);
   const [isNewContact, setIsNewContact] = useState(false);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Home() {
           email,
           whatsapp,
         };
-        const res = await axios.post("http://localhost:3000/contact", data);
+        await axios.post("http://localhost:3000/contact", data);
         setName("");
         setEmail("");
         setZap("");
